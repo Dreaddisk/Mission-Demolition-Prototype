@@ -646,6 +646,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b766f5ea18b10474bb8503085149e100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uitLevel: {fileID: 1367349820}
+  uitShots: {fileID: 946343903}
+  uitButton: {fileID: 75562333}
+  castlePOs: {x: 50, y: -9.5, z: 0}
+  castles:
+  - {fileID: 1415505819355020, guid: 76d735922fa59f24d92f8faff911bf3f, type: 2}
+  - {fileID: 1415505819355020, guid: cf12c6929bdc70d468606bd4371e142d, type: 2}
+  - {fileID: 1415505819355020, guid: 202bf35f046870443ae13b58dc09e06e, type: 2}
+  level: 0
+  levelMax: 0
+  shotsTaken: 0
+  castle: {fileID: 0}
+  mode: 0
+  showing: Show Slingshot
 --- !u!1 &665213265
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,7 +977,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -1306,7 +1320,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2059728302}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 534669908}
+        m_MethodName: SwitchView
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2059728302
